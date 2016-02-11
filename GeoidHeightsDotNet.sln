@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoidHeightsDotNet", "GeoidHeightsDotNet.csproj", "{E538A84C-9E21-4C4F-A90C-811E354256AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoidHeights", "GeoidHeights\GeoidHeights.csproj", "{E20A7153-FB56-4754-BF39-9615461D360F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E538A84C-9E21-4C4F-A90C-811E354256AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E538A84C-9E21-4C4F-A90C-811E354256AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E538A84C-9E21-4C4F-A90C-811E354256AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E538A84C-9E21-4C4F-A90C-811E354256AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E20A7153-FB56-4754-BF39-9615461D360F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E20A7153-FB56-4754-BF39-9615461D360F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E20A7153-FB56-4754-BF39-9615461D360F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E20A7153-FB56-4754-BF39-9615461D360F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
