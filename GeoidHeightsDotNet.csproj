@@ -1,61 +1,48 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E538A84C-9E21-4C4F-A90C-811E354256AD}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GeoidHeightsDotNet</RootNamespace>
-    <AssemblyName>GeoidHeightsDotNet</AssemblyName>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
+    <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
+    <Compile Remove="GeoidHeights\Coef.cs" />
+    <Compile Remove="GeoidHeights\GeoidHeights.cs" />
+    <Compile Remove="GeoidHeights\Properties\AssemblyInfo.cs" />
+    <Compile Remove="GeoidHeights\obj\Debug\netstandard2.1\GeoidHeights.AssemblyInfo.cs" />
+    <Compile Remove="GeoidHeights\obj\Release\netstandard2.1\GeoidHeights.AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Remove="GeoidHeights\" />
+    <None Remove="GeoidHeights\.DS_Store" />
+    <None Remove="GeoidHeights\obj\GeoidHeights.csproj.nuget.g.targets" />
+    <None Remove="GeoidHeights\obj\GeoidHeights.csproj.nuget.cache" />
+    <None Remove="GeoidHeights\obj\GeoidHeights.csproj.nuget.g.props" />
+    <None Remove="GeoidHeights\obj\GeoidHeights.csproj.nuget.dgspec.json" />
+    <None Remove="GeoidHeights\obj\project.assets.json" />
+    <None Remove="GeoidHeights\obj\Release\netstandard2.1\GeoidHeights.pdb" />
+    <None Remove="GeoidHeights\obj\Release\netstandard2.1\GeoidHeights.csproj.CoreCompileInputs.cache" />
+    <None Remove="GeoidHeights\obj\Release\netstandard2.1\GeoidHeights.assets.cache" />
+    <None Remove="GeoidHeights\obj\Release\netstandard2.1\GeoidHeights.dll" />
+    <None Remove="GeoidHeights\obj\Release\netstandard2.1\GeoidHeights.AssemblyInfoInputs.cache" />
+    <None Remove="GeoidHeights\obj\Release\netstandard2.1\GeoidHeights.csproj.FileListAbsolute.txt" />
+    <None Remove="GeoidHeights\obj\Debug\GeoidHeights.csprojAssemblyReference.cache" />
+    <None Remove="GeoidHeights\obj\Debug\netstandard2.1\GeoidHeights.pdb" />
+    <None Remove="GeoidHeights\obj\Debug\netstandard2.1\GeoidHeights.csproj.CoreCompileInputs.cache" />
+    <None Remove="GeoidHeights\obj\Debug\netstandard2.1\GeoidHeights.assets.cache" />
+    <None Remove="GeoidHeights\obj\Debug\netstandard2.1\GeoidHeights.dll" />
+    <None Remove="GeoidHeights\obj\Debug\netstandard2.1\GeoidHeights.AssemblyInfoInputs.cache" />
+    <None Remove="GeoidHeights\obj\Debug\netstandard2.1\GeoidHeights.csprojAssemblyReference.cache" />
+    <None Remove="GeoidHeights\obj\Debug\netstandard2.1\GeoidHeights.csproj.FileListAbsolute.txt" />
+    <None Remove="GeoidHeights\bin\Release\netstandard2.1\GeoidHeights.pdb" />
+    <None Remove="GeoidHeights\bin\Release\netstandard2.1\GeoidHeights.dll" />
+    <None Remove="GeoidHeights\bin\Release\netstandard2.1\GeoidHeights.deps.json" />
+    <None Remove="GeoidHeights\bin\Debug\netstandard2.1\GeoidHeights.pdb" />
+    <None Remove="GeoidHeights\bin\Debug\netstandard2.1\GeoidHeights.dll" />
+    <None Remove="GeoidHeights\bin\Debug\netstandard2.1\GeoidHeights.deps.json" />
+    <None Remove="GeoidHeights\obj\Release\netstandard2.1\GeoidHeights.csprojAssemblyReference.cache" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <ProjectReference Include="GeoidHeights\GeoidHeights.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="GeoidHeights\GeoidHeights.csproj">
-      <Project>{99E5826B-DA3A-45F5-BD64-8EEEED19DD60}</Project>
-      <Name>GeoidHeights</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>
