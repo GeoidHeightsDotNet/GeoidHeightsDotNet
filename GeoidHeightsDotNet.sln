@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoidHeightsDotNet", "GeoidHeightsDotNet.csproj", "{206FF110-ECB1-4F98-A86E-CF95B736F765}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoidHeightsDotNetProg", "GeoidHeightsDotNetProg.csproj", "{206FF110-ECB1-4F98-A86E-CF95B736F765}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoidHeights", "GeoidHeights\GeoidHeights.csproj", "{FD7AC5FF-80F0-4E9F-A482-DF6065F8AD15}"
 EndProject
