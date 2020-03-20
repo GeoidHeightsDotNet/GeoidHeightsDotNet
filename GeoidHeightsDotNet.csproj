@@ -46,7 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="GeoidHeights\GeoidHeights.csproj">
-      <Project>{e20a7153-fb56-4754-bf39-9615461d360f}</Project>
+      <Project>{99E5826B-DA3A-45F5-BD64-8EEEED19DD60}</Project>
       <Name>GeoidHeights</Name>
     </ProjectReference>
   </ItemGroup>
