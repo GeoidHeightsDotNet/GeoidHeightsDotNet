@@ -5,10 +5,22 @@
     <PackageId>GeoidHeightsDotNet</PackageId>
     <PackageVersion>1.0.2</PackageVersion>
     <Authors>Matej Frančeškin, Janus Weil</Authors>
-    <Description>Calculate Geoid Undulation according to EGM96</Description>
+    <Description>Calculate point geoid undulations at any given WGS 84 latitude and longitude by spherical harmonic synthesis.
+C# library with all necessary data ported from fortran code published here:
+http://earth-info.nga.mil/GandG/wgs84/gravitymod/egm96/egm96.html
+
+Usage Example:
+double h = GeoidHeights.undulation(38.6281550, 269.7791550);</Description>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.0.2</Version>
     <PackageLicenseExpression>LGPL-3.0-or-later</PackageLicenseExpression>
+    <Copyright>Copyright ©2020</Copyright>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Owners>Matej Frančeškin</Owners>
+    <PackageProjectUrl>https://github.com/MatejFranceskin/GeoidHeightsDotNet</PackageProjectUrl>
+    <Summary>Calculate Geoid Undulation according to EGM96</Summary>
+    <Title>GeoidHeightsDotNet</Title>
+    <PackOnBuild>true</PackOnBuild>
   </PropertyGroup>
 
 </Project>
