@@ -12,7 +12,6 @@
     <Compile Remove="GeoidHeights\Coef.cs" />
     <Compile Remove="GeoidHeights\GeoidHeights.cs" />
     <Compile Remove="GeoidHeights\Properties\AssemblyInfo.cs" />
-    <Compile Remove="GeoidHeights\obj\Debug\netstandard2.1\GeoidHeights.AssemblyInfo.cs" />
     <Compile Remove="GeoidHeights\obj\Release\netstandard2.1\GeoidHeights.AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -30,13 +29,6 @@
     <None Remove="GeoidHeights\obj\Release\netstandard2.1\GeoidHeights.AssemblyInfoInputs.cache" />
     <None Remove="GeoidHeights\obj\Release\netstandard2.1\GeoidHeights.csproj.FileListAbsolute.txt" />
     <None Remove="GeoidHeights\obj\Debug\GeoidHeights.csprojAssemblyReference.cache" />
-    <None Remove="GeoidHeights\obj\Debug\netstandard2.1\GeoidHeights.pdb" />
-    <None Remove="GeoidHeights\obj\Debug\netstandard2.1\GeoidHeights.csproj.CoreCompileInputs.cache" />
-    <None Remove="GeoidHeights\obj\Debug\netstandard2.1\GeoidHeights.assets.cache" />
-    <None Remove="GeoidHeights\obj\Debug\netstandard2.1\GeoidHeights.dll" />
-    <None Remove="GeoidHeights\obj\Debug\netstandard2.1\GeoidHeights.AssemblyInfoInputs.cache" />
-    <None Remove="GeoidHeights\obj\Debug\netstandard2.1\GeoidHeights.csprojAssemblyReference.cache" />
-    <None Remove="GeoidHeights\obj\Debug\netstandard2.1\GeoidHeights.csproj.FileListAbsolute.txt" />
     <None Remove="GeoidHeights\bin\Release\netstandard2.1\GeoidHeights.pdb" />
     <None Remove="GeoidHeights\bin\Release\netstandard2.1\GeoidHeights.dll" />
     <None Remove="GeoidHeights\bin\Release\netstandard2.1\GeoidHeights.deps.json" />
