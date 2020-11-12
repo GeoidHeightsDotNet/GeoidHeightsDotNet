@@ -9,33 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="GeoidHeights\Coef.cs" />
-    <Compile Remove="GeoidHeights\GeoidHeights.cs" />
-    <Compile Remove="GeoidHeights\Properties\AssemblyInfo.cs" />
-    <Compile Remove="GeoidHeights\obj\Release\netstandard2.1\GeoidHeights.AssemblyInfo.cs" />
+    <Compile Remove="GeoidHeights.Tests\**" />
+    <Compile Remove="GeoidHeights\**" />
+    <EmbeddedResource Remove="GeoidHeights.Tests\**" />
+    <EmbeddedResource Remove="GeoidHeights\**" />
+    <None Remove="GeoidHeights.Tests\**" />
+    <None Remove="GeoidHeights\**" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="GeoidHeights\" />
-    <None Remove="GeoidHeights\.DS_Store" />
-    <None Remove="GeoidHeights\obj\GeoidHeights.csproj.nuget.g.targets" />
-    <None Remove="GeoidHeights\obj\GeoidHeights.csproj.nuget.cache" />
-    <None Remove="GeoidHeights\obj\GeoidHeights.csproj.nuget.g.props" />
-    <None Remove="GeoidHeights\obj\GeoidHeights.csproj.nuget.dgspec.json" />
-    <None Remove="GeoidHeights\obj\project.assets.json" />
-    <None Remove="GeoidHeights\obj\Release\netstandard2.1\GeoidHeights.pdb" />
-    <None Remove="GeoidHeights\obj\Release\netstandard2.1\GeoidHeights.csproj.CoreCompileInputs.cache" />
-    <None Remove="GeoidHeights\obj\Release\netstandard2.1\GeoidHeights.assets.cache" />
-    <None Remove="GeoidHeights\obj\Release\netstandard2.1\GeoidHeights.dll" />
-    <None Remove="GeoidHeights\obj\Release\netstandard2.1\GeoidHeights.AssemblyInfoInputs.cache" />
-    <None Remove="GeoidHeights\obj\Release\netstandard2.1\GeoidHeights.csproj.FileListAbsolute.txt" />
-    <None Remove="GeoidHeights\obj\Debug\GeoidHeights.csprojAssemblyReference.cache" />
-    <None Remove="GeoidHeights\bin\Release\netstandard2.1\GeoidHeights.pdb" />
-    <None Remove="GeoidHeights\bin\Release\netstandard2.1\GeoidHeights.dll" />
-    <None Remove="GeoidHeights\bin\Release\netstandard2.1\GeoidHeights.deps.json" />
-    <None Remove="GeoidHeights\bin\Debug\netstandard2.1\GeoidHeights.pdb" />
-    <None Remove="GeoidHeights\bin\Debug\netstandard2.1\GeoidHeights.dll" />
-    <None Remove="GeoidHeights\bin\Debug\netstandard2.1\GeoidHeights.deps.json" />
-    <None Remove="GeoidHeights\obj\Release\netstandard2.1\GeoidHeights.csprojAssemblyReference.cache" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="GeoidHeights\GeoidHeights.csproj" />
