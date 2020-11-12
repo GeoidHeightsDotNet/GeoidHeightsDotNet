@@ -1,9 +1,12 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoidHeightsDotNetProg", "GeoidHeightsDotNetProg.csproj", "{206FF110-ECB1-4F98-A86E-CF95B736F765}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeoidHeightsDotNetProg", "GeoidHeightsDotNetProg.csproj", "{206FF110-ECB1-4F98-A86E-CF95B736F765}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoidHeights", "GeoidHeights\GeoidHeights.csproj", "{FD7AC5FF-80F0-4E9F-A482-DF6065F8AD15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeoidHeights", "GeoidHeights\GeoidHeights.csproj", "{FD7AC5FF-80F0-4E9F-A482-DF6065F8AD15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoidHeights.Tests", "GeoidHeights.Tests\XUnitTestProject1\GeoidHeights.Tests.csproj", "{B1A21468-C2BA-4DC9-8D0D-CCE074B7761C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,5 +22,15 @@ Global
 		{FD7AC5FF-80F0-4E9F-A482-DF6065F8AD15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD7AC5FF-80F0-4E9F-A482-DF6065F8AD15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD7AC5FF-80F0-4E9F-A482-DF6065F8AD15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1A21468-C2BA-4DC9-8D0D-CCE074B7761C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1A21468-C2BA-4DC9-8D0D-CCE074B7761C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1A21468-C2BA-4DC9-8D0D-CCE074B7761C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1A21468-C2BA-4DC9-8D0D-CCE074B7761C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3473F622-623E-4008-8448-26D5FED51237}
 	EndGlobalSection
 EndGlobal
