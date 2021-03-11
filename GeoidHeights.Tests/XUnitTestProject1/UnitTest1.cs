@@ -19,7 +19,7 @@ namespace GeoidHeight.Tests
             double h = GeoidHeights.undulation(lat, lon);
             Console.WriteLine(h);
             Debug.WriteLine(h);
-            Assert.Equal(expected, h);
+            Assert.Equal(expected, h, 13);
         }
     }
 }
