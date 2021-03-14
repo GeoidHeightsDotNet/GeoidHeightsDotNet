@@ -16,11 +16,18 @@ double h = GeoidHeights.undulation(38.6281550, 269.7791550);</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Copyright>Copyright ©2022</Copyright>
     <NeutralLanguage>en-US</NeutralLanguage>
-    <Owners>Matej Frančeškin</Owners>
-    <PackageProjectUrl>https://github.com/MatejFranceskin/GeoidHeightsDotNet</PackageProjectUrl>
+    <Owners>Matej Frančeškin, Janus Weil, Joshua A. Sells</Owners>
+    <PackageProjectUrl>https://github.com/GeoidHeightsDotNet/GeoidHeightsDotNet</PackageProjectUrl>
     <Summary>Calculate Geoid Undulation according to EGM96</Summary>
     <Title>GeoidHeightsDotNet</Title>
     <PackOnBuild>true</PackOnBuild>
+    <PackageIconUrl>https://avatars.githubusercontent.com/u/80382644?s=400&amp;v=4</PackageIconUrl>
+    <PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>
+
+
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" Visible="false" PackagePath="" />
+  </ItemGroup>
 
 </Project>
