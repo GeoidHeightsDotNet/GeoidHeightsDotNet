@@ -23,10 +23,12 @@ jobs:
       run: dotnet restore GeoidHeightsDotNet.sln
     - name: Build (debug)
       run: dotnet build --no-restore -p:PackageVersion=$(git describe --tags) GeoidHeightsDotNet.sln
-    - name: Test
+    - name: Test (debug)
       run: dotnet test --no-build --verbosity normal GeoidHeightsDotNet.sln
     - name: Build (release)
       run: dotnet build --no-restore --configuration Release -p:PackageVersion=$(git describe --tags) GeoidHeightsDotNet.sln
+    - name: Test (release)
+      run: dotnet test --no-build --verbosity normal --configuration Release GeoidHeightsDotNet.sln
     - name: Upload nupkg
       uses: actions/upload-artifact@v2
       with:
