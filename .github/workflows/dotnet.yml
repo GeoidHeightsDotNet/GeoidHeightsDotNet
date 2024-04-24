@@ -12,13 +12,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
       with:
         fetch-depth: 0
     - name: Setup .NET
-      uses: actions/setup-dotnet@v1
+      uses: actions/setup-dotnet@v4
       with:
-        dotnet-version: 5.0.x
+        dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore GeoidHeightsDotNet.sln
     - name: Build (debug)
@@ -30,7 +30,7 @@ jobs:
     - name: Test (release)
       run: dotnet test --no-build --verbosity normal --configuration Release GeoidHeightsDotNet.sln
     - name: Upload nupkg
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: nupkg
         path: GeoidHeights/bin/Release/*.nupkg

@@ -6,7 +6,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeoidHeightsDotNetProg", "G
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeoidHeights", "GeoidHeights\GeoidHeights.csproj", "{FD7AC5FF-80F0-4E9F-A482-DF6065F8AD15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoidHeights.Tests", "GeoidHeights.Tests\XUnitTestProject1\GeoidHeights.Tests.csproj", "{B1A21468-C2BA-4DC9-8D0D-CCE074B7761C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoidHeights.Tests", "GeoidHeights.Tests\GeoidHeights.Tests.csproj", "{B1A21468-C2BA-4DC9-8D0D-CCE074B7761C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
