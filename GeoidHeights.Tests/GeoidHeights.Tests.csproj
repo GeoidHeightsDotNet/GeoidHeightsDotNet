@@ -2,11 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-
     <IsPackable>false</IsPackable>
-
     <AssemblyName>GeoidHeight.Tests</AssemblyName>
-
     <RootNamespace>GeoidHeight.Tests</RootNamespace>
   </PropertyGroup>
 
@@ -28,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\GeoidHeights\GeoidHeights.csproj" />
+    <ProjectReference Include="..\GeoidHeights\GeoidHeights.csproj" />
   </ItemGroup>
 
 </Project>
