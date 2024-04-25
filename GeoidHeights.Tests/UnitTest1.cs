@@ -1,7 +1,7 @@
 using GeoidHeightsDotNet;
 using System;
+using System.Diagnostics;
 using Xunit;
-using Debug = System.Diagnostics.Debug;
 
 namespace GeoidHeight.Tests
 {
