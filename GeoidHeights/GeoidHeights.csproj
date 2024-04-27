@@ -22,11 +22,13 @@ double h = GeoidHeights.undulation(38.6281550, 269.7791550);</Description>
     <PackOnBuild>true</PackOnBuild>
     <PackageIconUrl>https://avatars.githubusercontent.com/u/80382644?s=400&amp;v=4</PackageIconUrl>
     <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
 
   <ItemGroup>
     <None Include="icon.png" Pack="true" Visible="false" PackagePath="" />
+    <None Include="..\README.md" Pack="true" Visible="false" PackagePath="" />
   </ItemGroup>
 
 </Project>
