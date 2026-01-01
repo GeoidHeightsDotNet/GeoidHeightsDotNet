@@ -3,3 +3,4 @@
 .mono
 bin/
 obj/
+GeoidHeights.Tests/coveragereport/
