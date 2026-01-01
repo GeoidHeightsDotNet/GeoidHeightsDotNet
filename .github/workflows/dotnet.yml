@@ -24,7 +24,7 @@ jobs:
     - name: Build (debug)
       run: dotnet build --no-restore -p:PackageVersion=$(git describe --tags) GeoidHeightsDotNet.sln
     - name: Test (debug)
-      run: dotnet test --no-build --verbosity normal GeoidHeightsDotNet.sln
+      run: dotnet test --no-build --verbosity normal -p:CollectCoverage=true -p:CoverletOutputFormat=cobertura GeoidHeightsDotNet.sln
     - name: Build (release)
       run: dotnet build --no-restore --configuration Release -p:PackageVersion=$(git describe --tags) GeoidHeightsDotNet.sln
     - name: Test (release)
