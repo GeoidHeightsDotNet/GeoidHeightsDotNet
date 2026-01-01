@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.1;netstandard2.0;net6.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net8.0;net9.0;net10.0</TargetFrameworks>
     <PackageId>GeoidHeightsDotNet</PackageId>
     <Authors>Matej Frančeškin, Janus Weil, Joshua A. Sells</Authors>
     <Description>Calculate point geoid undulations at any given WGS 84 latitude and longitude by spherical harmonic synthesis.
