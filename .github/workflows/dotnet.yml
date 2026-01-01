@@ -23,8 +23,11 @@ jobs:
       run: dotnet restore GeoidHeightsDotNet.sln
     - name: Build (debug)
       run: dotnet build --no-restore -p:PackageVersion=$(git describe --tags) GeoidHeightsDotNet.sln
-    - name: Test (debug)
-      run: dotnet test --no-build --verbosity normal -p:CollectCoverage=true -p:CoverletOutputFormat=cobertura GeoidHeightsDotNet.sln
+    - name: Test (debug) & Code Coverage
+      run: |
+        dotnet tool install -g dotnet-reportgenerator-globaltool
+        dotnet test --no-build --verbosity normal -p:CollectCoverage=true -p:CoverletOutputFormat=cobertura GeoidHeightsDotNet.sln
+        reportgenerator -reports:"GeoidHeights.Tests/coverage.cobertura.xml" -targetdir:"coveragereport" -reporttypes:Html
     - name: Build (release)
       run: dotnet build --no-restore --configuration Release -p:PackageVersion=$(git describe --tags) GeoidHeightsDotNet.sln
     - name: Test (release)
@@ -34,3 +37,8 @@ jobs:
       with:
         name: nupkg
         path: GeoidHeights/bin/Release/*.nupkg
+    - name: Upload coverage report
+      uses: actions/upload-artifact@v4
+      with:
+        name: coverage-report
+        path: coveragereport/*
