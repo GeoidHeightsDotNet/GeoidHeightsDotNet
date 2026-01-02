@@ -30,6 +30,9 @@ jobs:
         dotnet test --no-build --verbosity normal -p:CollectCoverage=true -p:CoverletOutputFormat=cobertura -p:CoverletOutput='./coveragereport/' GeoidHeights.Tests.csproj
         reportgenerator -reports:"coveragereport/coverage.cobertura.xml" -targetdir:"coveragereport" -reporttypes:Html
         cd ..
+    # Code coverage is intentionally generated only for Debug builds.
+    # The Release test run below is used to validate the optimized configuration,
+    # and does not produce separate coverage data.
     - name: Build (release)
       run: dotnet build --no-restore --configuration Release -p:PackageVersion=$(git describe --tags) GeoidHeightsDotNet.sln
     - name: Test (release)
