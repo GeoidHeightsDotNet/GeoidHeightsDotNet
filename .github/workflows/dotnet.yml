@@ -24,6 +24,7 @@ jobs:
     - name: Build (debug)
       run: dotnet build --no-restore -p:PackageVersion=$(git describe --tags) GeoidHeightsDotNet.sln
     - name: Test (debug) & Code Coverage
+      shell: bash
       run: |
         if ! command -v reportgenerator >/dev/null 2>&1; then
           dotnet tool install -g dotnet-reportgenerator-globaltool
