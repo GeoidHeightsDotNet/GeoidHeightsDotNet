@@ -25,7 +25,9 @@ jobs:
       run: dotnet build --no-restore -p:PackageVersion=$(git describe --tags) GeoidHeightsDotNet.sln
     - name: Test (debug) & Code Coverage
       run: |
-        dotnet tool install -g dotnet-reportgenerator-globaltool
+        if ! command -v reportgenerator >/dev/null 2>&1; then
+          dotnet tool install -g dotnet-reportgenerator-globaltool
+        fi
         dotnet test --no-build --verbosity normal -p:CollectCoverage=true -p:CoverletOutputFormat=cobertura -p:CoverletOutput='./coveragereport/' GeoidHeights.Tests/GeoidHeights.Tests.csproj
         reportgenerator -reports:"GeoidHeights.Tests/coveragereport/coverage.cobertura.xml" -targetdir:"GeoidHeights.Tests/coveragereport" -reporttypes:Html
     # Code coverage is intentionally generated only for Debug builds.
