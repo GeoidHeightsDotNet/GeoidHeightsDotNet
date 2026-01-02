@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard1.1;netstandard2.0;net6.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net8.0;net9.0;net10.0</TargetFrameworks>
     <PackageId>GeoidHeightsDotNet</PackageId>
     <Authors>Matej Frančeškin, Janus Weil, Joshua A. Sells</Authors>
     <Description>Calculate point geoid undulations at any given WGS 84 latitude and longitude by spherical harmonic synthesis.
@@ -22,11 +22,13 @@ double h = GeoidHeights.undulation(38.6281550, 269.7791550);</Description>
     <PackOnBuild>true</PackOnBuild>
     <PackageIconUrl>https://avatars.githubusercontent.com/u/80382644?s=400&amp;v=4</PackageIconUrl>
     <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
 
   <ItemGroup>
     <None Include="icon.png" Pack="true" Visible="false" PackagePath="" />
+    <None Include="..\README.md" Pack="true" Visible="false" PackagePath="" />
   </ItemGroup>
 
 </Project>
