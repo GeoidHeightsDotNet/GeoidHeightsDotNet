@@ -23,14 +23,28 @@ jobs:
       run: dotnet restore GeoidHeightsDotNet.sln
     - name: Build (debug)
       run: dotnet build --no-restore -p:PackageVersion=$(git describe --tags) GeoidHeightsDotNet.sln
-    - name: Test (debug)
-      run: dotnet test --no-build --verbosity normal GeoidHeightsDotNet.sln
+    - name: Test (debug) & Code Coverage
+      shell: bash
+      run: |
+        if ! command -v reportgenerator >/dev/null 2>&1; then
+          dotnet tool install -g dotnet-reportgenerator-globaltool
+        fi
+        dotnet test --verbosity normal -p:CollectCoverage=true -p:CoverletOutputFormat=cobertura -p:CoverletOutput='./coveragereport/' GeoidHeights.Tests/GeoidHeights.Tests.csproj
+        reportgenerator -reports:"GeoidHeights.Tests/coveragereport/coverage.cobertura.xml" -targetdir:"GeoidHeights.Tests/coveragereport" -reporttypes:Html
+    # Code coverage is intentionally generated only for Debug builds.
+    # The Release test run below is used to validate the optimized configuration,
+    # and does not produce separate coverage data.
     - name: Build (release)
       run: dotnet build --no-restore --configuration Release -p:PackageVersion=$(git describe --tags) GeoidHeightsDotNet.sln
     - name: Test (release)
-      run: dotnet test --no-build --verbosity normal --configuration Release GeoidHeightsDotNet.sln
+      run: dotnet test --verbosity normal --configuration Release GeoidHeightsDotNet.sln
     - name: Upload nupkg
       uses: actions/upload-artifact@v4
       with:
         name: nupkg
         path: GeoidHeights/bin/Release/*.nupkg
+    - name: Upload coverage report
+      uses: actions/upload-artifact@v4
+      with:
+        name: coverage-report
+        path: GeoidHeights.Tests/coveragereport/*
