@@ -4,6 +4,7 @@ Calculate Geoid Undulation according to EGM96.
 
 ## Usage Example
 
+    using GeoidHeightsDotNet;
     double h = GeoidHeights.undulation(38.6281550, 269.7791550);
 
 ## References
